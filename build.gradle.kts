@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "me.vrganj"
-version = "1.1-SNAPSHOT"
+version = "1.1.1-SNAPSHOT"
 
 repositories {
     maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
-    compileOnly("org.nanohttpd:nanohttpd:2.3.1")
+    compileOnly("net.freeutils:jlhttp:2.6")
 }
 
 java {
@@ -32,6 +32,7 @@ publishing {
         maven {
             url = uri("http://localhost:7000")
             isAllowInsecureProtocol = true
+            credentials(PasswordCredentials::class)
         }
     }
 }
