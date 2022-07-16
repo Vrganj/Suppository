@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b6e8f9a3-1336-4582-81c0-51d7f56a3127" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/me/vrganj/suppository/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/vrganj/suppository/Server.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/vrganj/suppository/Suppository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/vrganj/suppository/Suppository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +84,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/luka/Desktop/NbtViewer&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/luka/Desktop/Slimefun69&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
@@ -222,7 +219,12 @@
       <workItem from="1656254283017" duration="272000" />
       <workItem from="1656255167364" duration="360000" />
       <workItem from="1656256239701" duration="1057000" />
-      <workItem from="1656257414431" duration="3300000" />
+      <workItem from="1656257414431" duration="4190000" />
+      <workItem from="1656277717533" duration="2078000" />
+      <workItem from="1656320044851" duration="1265000" />
+      <workItem from="1656329032682" duration="120000" />
+      <workItem from="1656331247885" duration="354000" />
+      <workItem from="1656332070128" duration="1998000" />
     </task>
     <servers />
   </component>

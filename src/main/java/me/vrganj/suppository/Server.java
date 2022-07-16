@@ -39,6 +39,14 @@ public class Server extends HTTPServer {
             return;
         }
 
+        var headers = req.getHeaders();
+
+        if (!headers.contains("authorization") || !authenticator.authenticate(headers.get("authorization"))) {
+            res.getHeaders().add("WWW-Authenticate", "Basic");
+            res.sendError(401);
+            return;
+        }
+
         if (req.getMethod().equals("GET")) {
             if (!file.exists()) {
                 res.sendError(404);
@@ -52,13 +60,6 @@ public class Server extends HTTPServer {
 
             serveFileContent(file, req, res);
         } else if (req.getMethod().equals("PUT")) {
-            var headers = req.getHeaders();
-
-            if (!headers.contains("authorization") || !authenticator.authenticate(headers.get("authorization"))) {
-                res.sendError(401);
-                return;
-            }
-
             file.getParentFile().mkdirs();
 
             try (var stream = new FileOutputStream(file)) {
