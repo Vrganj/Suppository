@@ -25,7 +25,9 @@ public class Server extends HTTPServer {
 
     @Override
     protected void handleMethod(Request req, Response res) throws IOException {
-        plugin.getLogger().info(req.getMethod() + " " + req.getPath());
+        if (plugin.getConfig().getBoolean("verbose")) {
+            plugin.getLogger().info(req.getMethod() + " " + req.getPath());
+        }
 
         var file = new File(repository, req.getPath()).getCanonicalFile();
 
