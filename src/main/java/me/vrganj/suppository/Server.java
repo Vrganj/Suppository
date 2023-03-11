@@ -41,6 +41,15 @@ public class Server extends HTTPServer {
             return;
         }
 
+        if (req.getMethod().equals("HEAD")) {
+            if (!file.exists()) {
+                res.sendError(404);
+                return;
+            }
+
+            res.sendHeaders(200, file.length(), file.lastModified(), null, null, null);
+        }
+
         var headers = req.getHeaders();
 
         if (!headers.contains("authorization") || !authenticator.authenticate(headers.get("authorization"))) {
